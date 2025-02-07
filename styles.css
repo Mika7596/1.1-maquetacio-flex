@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer{
+    background-color: black;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header, main, footer{
+    margin-top: 25px;
+}
+
+.first_row_header, .container_main{
+    background-color: rgb(139, 85, 190);
+}
+
+.first_row_header nav div{
+    background-color: rgb(228, 78, 178);
+}
+
+.sec_row_header, aside{
+    background-color: rgb(233, 154, 98);
+}
+
+.sec_row_header nav, .ad{
+    background-color: rgb(236, 236, 90);
+}
+article, .nav_main{
+    background-color: aquamarine;
+}
+
+.footer{
+    background-color: rgb(228, 225, 71);
+}
+.first_row_header nav div, .sec_row_header, .sec_row_header nav, article, .nav_main, .ad, .footer, aside, header, main, footer, .first_row_header nav, .container_main{
+    padding: 15px;
+}
+
+.first_row_header, .section{
+    margin-bottom: 25px;
+}
+
+.first_row_header nav, main, .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo, .social, aside{
+    width: 15%;
+}
+
+.nav_header{
+    width: 60%;
+}
+
+.container_main{
+    width: 80%;
+}
+
+.section{
+    flex-wrap: wrap;
+}
+
+article:first-child, article:nth-child(2), aside div:first-child{
+    margin-bottom: 15px;
+}
+
+@media (min-width: 600px){
+    article{
+        width: 40%;
+    }
+}
+@media (max-width: 768px){
+    body{
+        background-color: rgb(179, 62, 233);
+    }
+    header, main, footer{
+        background-color: rgb(189, 236, 59);
+    }
+
+    .first_row_header nav, main{
+        flex-wrap: wrap;
+    }
+    .col-t, .ad, aside, .container_main, section{
+        width: 100%;
+    }
+    .col-t:first-child, .col-t:nth-child(2), .container_main{
+        margin-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 600px){
+    body{
+        background-color: rgb(39, 204, 113);
+    }
+    header, main, footer{
+        background-color: rgb(236, 59, 94);
+    }
+    .section{
+        flex-direction: column;
+    }
+    article{
+        width: 100%;
+    }
+    article:nth-child(3){
+        margin-bottom: 15px;
+    }
+}
+
+.logo:hover{
+    cursor: pointer;
+    animation-name: hover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes hover{
+    from{
+        background-color: rgb(228, 78, 178) 
+    }
+    to{
+        transform: scale(1.1);
+        background-color: red;
+        
+    }
+}
+
